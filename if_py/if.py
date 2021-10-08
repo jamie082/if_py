@@ -1,14 +1,21 @@
 #!/usr/bin/python3
     
 class Program:
+    def __init__(self, a=1200, b=2200):
+        self.b = b
+        self.a = a
 
-    def __init__(self, a = 1200, b = 2200):
-
+    def to_ret_value(self):
+        return (self.a * 5) + 100
+'''
 p1 = Program(1200, 2200)
 
+print(p1.a)
+print(p1.b)
+'''
     def get_method (self):
         print("Getting value...")
-        return self._method
+            return self._method
 
     def set_method (self, value): # if method
         print("Outputting print value...")
@@ -19,11 +26,12 @@ p1 = Program(1200, 2200)
 class Program_2:
 
 class CoralReef (Program, Program_2):
-    pass
+        pass
 
 human = Program(20)
 
 # Get the to_fahrenheit method
+
 print(human.to_fahrenheit())
 
 human.temperature = -200
