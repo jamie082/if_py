@@ -7,14 +7,9 @@ class Program:
 
     def to_ret_value(self):
         return (self.a * 5) + 100
-'''
-p1 = Program(1200, 2200)
 
-print(p1.a)
-print(p1.b)
-'''
     def get_method (self):
-        print("Getting value...")
+    #    print("Getting value...")
             return self._method
 
     def set_method (self, value): # if method
@@ -25,13 +20,15 @@ print(p1.b)
 
 class Program_2:
 
-class CoralReef (Program, Program_2):
+#class CoralReef (Program, Program_2):
         pass
 
 human = Program(20)
 
 # Get the to_fahrenheit method
+print(human.get_temperature())
 
-print(human.to_fahrenheit())
+#print (human.to_fahrenheit())
+print (human.to_fahrenheit())
 
 human.temperature = -200
