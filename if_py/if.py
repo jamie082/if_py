@@ -1,9 +1,9 @@
 #!/usr/bin/python3
     
 class Program:
-    def __init__(self, a=1200, b=2200):
-        self.b = b
-        self.a = a
+    def __init__(self, a=100, b=1200):
+        self.top = a
+        self.bottom = b
 
     def to_ret_value(self):
         return (self.a * 5) + 100
@@ -20,10 +20,10 @@ class Program:
 
 class Program_2:
 
-#class CoralReef (Program, Program_2):
+class CoralReef (Program, Program_2):
         pass
 
-human = Program(20)
+human = Program("John", 20)
 
 # Get the to_fahrenheit method
 print(human.get_temperature())
